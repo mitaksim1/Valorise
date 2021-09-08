@@ -8,7 +8,7 @@ Valorise les efforts de vos collaborateurs! Une équipe épanouie rend l'ambianc
 
 yarn dev
 
-### Rules
+### Contraintes
 
 - **Formulaire utilisateur**
 
