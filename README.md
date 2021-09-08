@@ -12,9 +12,9 @@ yarn dev
 
 - **Formulaire utilisateur**
 
-    [ ] Impossibilité de créer plus d'un utilisateur avec le même email.
+    [x] Impossibilité de créer plus d'un utilisateur avec le même email.
 
-    [ ] Impossibilité d'enregistrer un utilisateur sans une adresse email.
+    [x] Impossibilité d'enregistrer un utilisateur sans une adresse email.
 
 - **Formulaire de TAG**
 
