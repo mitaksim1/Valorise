@@ -18,8 +18,8 @@ yarn dev
 
 - **Formulaire de TAG**
 
+    [x] Impossibilité d'enregistrer une TAG sans nome.
     [ ] Impossibilité d'enregistrer la même tag avec le même nom.
-    [ ] Impossibilité d'enregistrer une TAG sans nome.
     [ ] Impossibilité d'enregistrer un formulaire par un utilisateur qui n'est pas admin.
 
 - **Formulaire Compliments**
