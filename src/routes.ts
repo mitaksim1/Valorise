@@ -4,6 +4,7 @@ import { CreateTagController } from "./controllers/CreateTagController";
 import { ensureAdmin } from "./middlewares/ensureAdmin";
 import { AuthenticateUserController } from "./controllers/AuthenticateUserController";
 import { CreateComplimentController } from "./controllers/CreateComplimentController";
+import { ensureAuthenticate } from "./middlewares/ensureAuthenticate";
 
 const router = Router();
 
@@ -14,8 +15,8 @@ const createComplimentController = new CreateComplimentController();
 
 router.post("/users", createUserController.handle);
 // On insère le middleware entre le chemin de la route et la méthode
-router.post("/tags", ensureAdmin, createTagController.handle);
+router.post("/tags", ensureAuthenticate, ensureAdmin, createTagController.handle);
 router.post("/login", authenticateUserController.handle);
-router.post("/compliment", createComplimentController.handle);
+router.post("/compliments", ensureAuthenticate, createComplimentController.handle);
 
 export { router };
