@@ -1,4 +1,6 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
+// Pour pouvoir utiliser le @Exclude de class-transformer
+import { Exclude } from "class-transformer";
 // On importe la version qui nous intéresse, v4 donne des id's aléatoires, on le renomme uuid
 import { v4 as uuid } from "uuid";
 
@@ -19,6 +21,7 @@ class User {
     @Column()
     admin: boolean;
 
+    @Exclude()
     @Column()
     password: string;
 
